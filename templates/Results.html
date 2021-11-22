@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Gegham Shakaryan / ​Online Object Detector, Object Detector">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Results</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Results.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Results">
+    <meta property="og:type" content="website">
+
+    <link href="{{ url_for('static', filename='Results.css') }}" rel="stylesheet" media="screen"> 
+    <link href="{{ url_for('static', filename='nicepage.css') }}" rel="stylesheet" media="screen"> 
+    <link href="{{ url_for('static', filename='nicepage.js') }}" rel="stylesheet" media="screen"> 
+    <link href="{{ url_for('static', filename='jquery-1.9.1.min.js') }}" rel="stylesheet" media="screen"> 
+
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-4f35"><div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-default u-text-1">Gegham Shakaryan / ​Online Object Detector</h2>
+      </div></header>
+    <section class="u-align-center u-clearfix u-section-1" id="sec-44f5">
+      <div class="u-align-center u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Object Detector<br>
+        </h2>
+        <p class="u-text u-text-2">Hi there, my name is Gegham, I am from Shushi, Armenia and this is my online object detector built on YOLOv5. Give an image, it will localize the objects and which class the model thinks they belong to.<br>
+        </p>
+
+        <button onclick="goBack()">Reset</button>
+
+        <script>
+        function goBack() {
+          window.history.back();
+        }
+        </script>
+
+<!--         <form action='' method="POST" enctype="multipart/form-data">
+          <p>
+          <input value='Reset' class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-2">
+          </p>
+        </form> -->
+
+        <div class="u-container-style u-group u-palette-1-base u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+          <div class='ImageContainer' style="max-width: 600px">
+            <img src="data:image/png;base64, {{image}}" class='result_image' style="width: 100%" />
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
